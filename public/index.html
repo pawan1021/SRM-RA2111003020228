@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REST API UI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>REST API UI</h1>
+      <form id="postForm">
+        <h2>POST Request</h2>
+        <label for="dataInput">Data (comma-separated):</label>
+        <input type="text" id="dataInput" required />
+        <button type="submit">
+          <i class="fas fa-paper-plane"></i> Send POST Request
+        </button>
+      </form>
+      <div id="postResponse" class="response-box"></div>
+      <h2>Response Sections</h2>
+      <select id="responseDropdown">
+        <option value="characters">Characters</option>
+        <option value="numbers">Numbers</option>
+        <option value="highestAlphabet">Highest Alphabet</option>
+      </select>
+      <br>
+      <br>
+      <button id="getRequestButton">
+        <i class="fas fa-download"></i> Send GET Request
+      </button>
+      <div id="getResponse" class="response-box"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
